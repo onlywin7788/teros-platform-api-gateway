@@ -1,0 +1,18 @@
+server:
+  port: 48082
+  servlet:
+    context-path: "/api-gateway"
+spring:
+  application:
+    name: teros-api-gateway
+  main:
+    allow-bean-definition-overriding: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+# extra option
+extra:
+  env:
+    teros_home: e:/teros_home
