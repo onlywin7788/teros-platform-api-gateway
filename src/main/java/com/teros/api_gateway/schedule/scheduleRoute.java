@@ -42,5 +42,9 @@ public class scheduleRoute {
                     String.format("http://127.0.0.1:%s/actuator/gateway/routes/route_%d", servicePort, i+1)
                     , HttpMethod.POST, contents);
         }
+        // refresh route
+        remoteNetworkCall.requestRestEntity(
+                String.format("http://127.0.0.1:%s/actuator/gateway/refresh", servicePort)
+                , HttpMethod.POST, "");
     }
 }
