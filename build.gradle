@@ -28,6 +28,7 @@ dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-starter-gateway'
 	implementation 'com.google.code.gson:gson:2.8.6'
 	implementation 'commons-io:commons-io:2.8.0'
+	implementation 'org.json:json:20190722'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	implementation fileTree(dir: 'E:/teros_home/libs', include: ['*.jar'])
